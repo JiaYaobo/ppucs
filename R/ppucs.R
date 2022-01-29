@@ -1,6 +1,6 @@
 # Hello, world!
 #
-# This is an example function named 'hello' 
+# This is an example function named 'hello'
 # which prints 'Hello, world!'.
 #
 # You can learn more about package authoring with RStudio at:
@@ -12,7 +12,14 @@
 #   Install Package:           'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
+ppucs <- function(...){
+  args <- c()
 
-hello <- function() {
-  print("Hello, world!")
+
+  rmarkdown::output_format(
+    knitr = rmarkdown::knitr_options(),
+    NULL,
+    base_format = rmarkdown::md_document()
+  )
 }
+
