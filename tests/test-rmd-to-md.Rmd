@@ -2,6 +2,7 @@
 title: "test-rmd-to-md"
 author: "jia"
 date: "2022/1/29"
+knit: ppucs::knit_to_slidev
 output:
   ppucs::ppucs
 ---
@@ -11,4 +12,9 @@ output:
 ```{r}
 paste0("hello wolrd")
 ```
-
+```{r}
+a <- c(1,2,3)
+b <- c(4,5,6)
+dt <- data.frame(a=a,b=b)
+dt
+```
